@@ -1,0 +1,504 @@
+body{
+    margin: 1.5em 1.5em;
+    font-family: 'poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+   
+
+    .logo{
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: 	black;
+        span{
+            color: 	#0047AB;
+        }
+    }
+
+    .menu{
+        width: 2em;
+        cursor: pointer;
+    }
+
+    nav{
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: rgb(106, 120, 126);
+        width: 40%;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: transform 800ms;
+        z-index: 5;
+        
+        .close{
+            width: 2.5em;
+            float: right;
+            padding: 1.5em;
+            cursor: pointer;
+        }
+
+        ul{
+            margin-top: 100px;
+            list-style: none;
+            padding: .5em;
+            
+
+            a{
+                color: black;
+                font-size: 1.6rem;
+                padding: .5em 1em;
+                display: block;
+                border-radius: 2em;
+
+                &:hover{
+                    background: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+.hero{
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+
+    .top-subhead{
+        opacity: .99;
+        font-size: 1.1rem;
+        animation: slideInLeft 1s ease-in;
+    }
+
+    h1{
+        margin-top: -1px;
+        font-size: 2rem;
+        animation: slideRight 1s ease-in;
+    }
+
+    .order{
+        background: palevioletred;
+        padding: .9em 1.5em;
+        border-radius: 2em;
+        box-shadow: 2px 3px 3px rgb(54, 125, 128);
+        width: 60px;
+        color: black;
+        margin-left: 190px;
+        font-size: 1rem;
+        font-weight: 550;
+        margin-top: -1px;
+        animation: bouncyorder 1s alternate-reverse infinite;
+
+        &:hover{
+            color: white ;
+        }
+    }
+
+    
+    .checkmark{
+
+        display: flex;
+        margin-top: 35px;
+        padding: 1em;
+        border-radius: 1em;
+        gap: 40px;
+        border-left: 3px solid black;
+        border-bottom:3px solid black ;
+
+        .checks{
+            width: 5px;
+            
+        }
+
+        p{
+            font-size: 1.2rem;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+    }
+}
+
+.our-services{
+   display: grid;
+   place-items: center; 
+}
+main{
+    margin-top: 30px;
+    gap: 2em;
+    height: 100%;
+  
+    margin: .7em 4em;
+
+  
+    .service{
+        border: 2px solid black;
+        border-radius: 1em;
+        box-shadow: 5px 5px 60px black;
+        padding: 1em 1em;
+        margin-top: 20px;
+
+        .request{
+
+            color: rgb(248, 5, 126);
+            border-radius: 1em;
+            padding: .2em;
+        }
+        .service-image{
+
+            height: 250px;   
+            width: 280px; 
+            border-radius: 1em;
+            }
+
+            p{
+                font-size: 1.19rem;
+                border: 1.2px solid black;
+                padding: 1em .5em;
+                border-radius: .5em;
+                box-shadow: 8px 8px 8px gray ;
+                transition: transform 800ms;
+            }
+        
+
+            .service-1{
+                background: url('../images/man-behind-bars.crdownload');
+                background-size: cover;
+            }
+            .service-2{
+                background: url('../images/delivery-man-on-bicycle.jpg');
+                background-size: cover;
+            }
+            .service-3{
+                background: url('../images/car-wash.jpg');
+                background-size: cover;
+            }
+            .service-4{
+                background: url('../images/people-cleaning-window-garden.jpg');
+                background-size: cover;
+            }
+            .service-5{
+                background: url('../images/1man-cutting-grass.jpg');
+                background-size: cover;
+            }
+    }
+}
+.container{
+    margin-top: 80px;
+    display: grid;
+    place-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 2vw;
+    width: 80%;
+    background: rgb(63, 156, 231);
+    border-radius: 1em;
+
+    h3{
+        color: wheat ;
+        font-weight: bold;
+        margin-bottom: 25px;
+        font-size: 2rem;
+    }
+
+    input{
+        border: 0;
+        margin: 10px 0;
+        padding: 1em;
+        outline: none;
+        background: #f5f5f5;
+        font-size: 1.1rem;
+        border-radius: .5em;
+    }
+
+    .message{
+        
+            border: 0;
+            margin: 10px 0;
+            padding: 1em;
+            outline: none;
+            background: #f5f5f5;
+            font-size: 1.1rem;
+            border-radius: .5em;
+        
+    }
+
+    button{
+        padding: 15px;
+        background: rebeccapurple;
+        border-radius: 2em;
+        font-size: 1.1rem;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        width: 150px;
+        margin: 20px auto 0;
+
+    }
+
+    
+}
+
+.whatsapp{
+    display: grid;
+    place-items: center;
+    background-image:linear-gradient(to bottom right,rgb(63, 156, 231),rgb(22, 216, 22)) ;
+    border-radius: 2em;
+    padding: 1em 1em;
+    
+    width: 80%;
+    color: wheat;
+
+    a{
+        color: black;
+        font-size: 1.5rem;
+    }
+}
+
+.gratitude{
+    background: rgb(241, 204, 135);
+    width: 100%;
+    padding: .5em 1.2em;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    border-radius: .5em;
+    p{
+        opacity: .9;
+    }
+}
+.about{
+    display: grid;
+    place-items: center;
+    border-radius: .5em;
+    background: rgb(3, 6, 14);
+    padding: 1em;
+    margin-top: 50px;
+    
+    color: #f5f5f5;
+    font-size: 1.2rem;
+}
+.back{
+    font-size: 2em;
+    color: black;
+}
+
+.open-nav{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:510px){
+    body{
+        margin: 1em 2em;
+    }
+    header{
+        .logo{
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: 	black;
+        span{
+            color: 	#0047AB;
+        }
+    }
+}
+    .hero{
+        display: grid;
+        place-items: center;
+        margin-top: 20px;
+        background-image: linear-gradient(to bottom right,wheat,wheat);
+        border-radius: 1em;
+        padding: 2em .1em;
+        box-shadow: 10px 10px 10px gray;
+        display: grid;
+        place-items: center;
+        margin-top: 20px;
+        opacity: .99;
+    
+        .top-subhead{
+            opacity: .99;
+            font-size: 1.5rem;
+        }
+    
+        h1{
+            margin-top: -16px;
+            font-size: 2.7rem;
+        }
+    
+        .order{
+            background: palevioletred;
+            padding: .9em 1.5em;
+            border-radius: 2em;
+            box-shadow: 2px 3px 3px rgb(54, 125, 128);
+            width: 85px;
+            color: black;
+            margin-left: 190px;
+            font-size: 1.2rem;
+            font-weight: 550;
+            margin-top: -1px;
+            animation: bouncyorder 1s alternate-reverse infinite;
+    
+            &:hover{
+                color: white ;
+            }
+        }
+        .trading-days{
+            margin-bottom: -40px;
+            margin-right: 210px;
+            font-size: 1.2rem;
+        }
+    
+        
+        .checkmark{
+    
+            display: flex;
+            margin-top: 35px;
+            padding: 1em;
+            border-radius: 1em;
+            gap: 40px;
+            border: 3px solid blue;
+            box-shadow: 10px 10px 20px black;
+    
+            .checks{
+                width: 6px;
+                gap: 12em;
+            }
+    
+            p{
+                font-size: 1.5rem;
+                margin-top: -2px;
+                font-weight: bold;
+            }
+        }
+    }
+    
+    main{
+       
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        margin-inline: auto;
+        padding-block: 2rem;
+        width: min(95%, 70rem);
+        gap: 1em;
+
+        .service{
+            margin: .1em .5em;
+            padding: .1em 1em;
+            height: 100%;
+            border: 2px solid black;
+        }
+    }
+}
+
+@media only screen and (min-width:720px){
+    body{
+        margin: 1em 2em;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        margin-inline: auto;
+        padding-block: 2rem;
+        width: min(95%, 70rem);
+    }
+}
+
+@media only screen and (min-width:900px){
+    body{
+        margin: 2em 3em;
+    }
+    .contact{
+        font-size: 2em;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    header{
+        .menu{
+            display: none;
+        }
+
+        .close{
+            display: none;
+        }
+
+        nav{
+                position: unset;
+                transform: translateX(0%);
+                display: block;
+                width: auto;
+                height: auto;
+                background: none;
+                
+            ul{
+                margin: 0;
+                display: flex;
+
+                    a{
+                        &:hover{
+                            background: none;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+@media only screen and (min-width:1000px){
+    body{
+        margin: 1em 6em;
+    }
+    .checkmark{
+        width: 40%;
+        height: 70%;
+    }
+    .container{
+        width: 70%;
+        margin-left: 200px;
+    }
+}
+
+@keyframes bouncyorder {
+    from{
+        transform: translatey(-5px);
+    }
+
+    to{
+        transform: translateY(5px);
+    }
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-600px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes slideRight{
+    from{
+        transform: translateX(600px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+p:hover{
+    transform: translateY(5px);
+}  
